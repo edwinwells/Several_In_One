@@ -1,12 +1,15 @@
 <html>
-	<head>
-	  <title> 3 In 1 Website - Welcome!! </title>
-	</head>
-		<body class= "bgsilver">
-		
-	      <h1><a href = "http://C:/Users/edwin/mystuff/ISBN_Refactored/app.rb"> ISBN Validator </a>
-	      </h1>
+  <head>
+	<body class= "bgsilver">
+		<link href="css/styles.css" rel="stylesheet">
 
+	      <center><a href = "C:/Users/edwin/mystuff/ISBN_Refactored/app.rb"> ISBN Validator </a></center>
+
+	      <center><a href = "http://C:/Users/edwin/mystuff/Exact_Change/app.rb"> Exact Change Analyser </a></center>
+
+	      <center><a href = "http://C:/Users/edwin/mystuff/New_Personal_Details/app.rb"> Personal Details Exercise </a></center>
+<br><br>
 <%=yield%>
 		</body>
+	 </head>
 </html>
