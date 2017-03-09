@@ -1,3 +1,11 @@
+H1 { text-align: center;
+font-weight: bold;
+color: green;
+text-decoration: underline;
+}
+
+
+
 .color_blue{
 color: blue;
 
@@ -20,5 +28,11 @@ text-align: center;
 
 .bgsilver{
 background-color: silver;
+
+}
+
+
+.bggoldenrod{
+background-color: goldenrod;
 
 }
