@@ -88,20 +88,21 @@ post '/remove_unwanted(isbn_string)' do
     result = remove_unwanted(number)
 
     if result==true 
-        statement="\nCongratulations!\nYour ISBN #{number} is Valid!\nHave a nice day:-)\n\n"
+        statement1="Congratulations!"
+        statement2="Your ISBN #{number} is Valid!"
+        statement3="Have a nice day:-)"
     else
-        statement="\nSorry 'bout your luck!\nYou got hold of a counterfeit ISBN!\nBetter luck next time...\n\n"
+        statement1="Sorry 'bout your luck!"
+        statement2="You got hold of a counterfeit ISBN!"
+        statement3="Better luck next time..."
     end
+    erb :showisbnresult, :locals => {:number => number,:statement1 => statement1, :statement2 => statement2, :statement3 => statement3} 
+
 end
 
 post '/exact_change(changevalue)' do
     number = params[:changevalue]
     result = exact_change(number)
-    # "OK, for #{number}, you will need #{result}!  Get to countin'!!"
     erb :showinfo, :locals => {:number => number, 
                                :result => result}
 end
-
-# post '/' do
-#     erb :initial_page
-# end
