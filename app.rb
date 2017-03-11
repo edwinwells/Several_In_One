@@ -1,7 +1,7 @@
 require 'sinatra'
 require_relative 'C:/Users/edwin/mystuff/ISBN_Refactored/isbn_refactored.rb'
-require_relative 'exact_change.rb'
-# require_relative 'new_personal_details.rb'
+require_relative 'C:/Users/edwin/mystuff/Exact_Change/exact_change.rb'
+
 
 get '/' do
     erb :initial_page
