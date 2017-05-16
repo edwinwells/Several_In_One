@@ -1,7 +1,7 @@
 require 'sinatra'
 require_relative 'C:/Users/edwin/mystuff/ISBN_Refactored/isbn_refactored.rb'
 require_relative 'C:/Users/edwin/mystuff/Exact_Change/exact_change.rb'
-
+enable :sessions
 
 get '/' do
     erb :initial_page
@@ -83,26 +83,26 @@ get '/favorites' do
         erb :favorites, :locals=>{:name=>params[:name], :age=>params[:age],:user_location=>params[:user_location],:num1=>params[:num1],:num2=>params[:num2],:num3=>params[:num3],:age_compare=>age_compare,:sum_of_nums=>sum_of_nums}
 end
 
-post '/remove_unwanted(isbn_string)' do
+post '/remove_unwanted' do
     number = params[:isbn_string]
-    result = remove_unwanted(number)
+    session[:result] = remove_unwanted(number)
 
-    if result==true 
-        statement1="Congratulations!"
-        statement2="Your ISBN #{number} is Valid!"
-        statement3="Have a nice day:-)"
+    if session[:result]==true 
+        statement="\nCongratulations!\nYour ISBN #{number} is Valid!\nHave a nice day:-)\n\n"
     else
-        statement1="Sorry 'bout your luck!"
-        statement2="You got hold of a counterfeit ISBN!"
-        statement3="Better luck next time..."
+        statement="\nSorry 'bout your luck!\nYou got hold of a counterfeit ISBN!\nBetter luck next time...\n\n"
     end
-    erb :showisbnresult, :locals => {:number => number,:statement1 => statement1, :statement2 => statement2, :statement3 => statement3} 
 
+
+    erb :showisbnresult, :locals => {:number => number, 
+                               :result => session[:result], 
+                               :statement => statement}
 end
 
-post '/exact_change(changevalue)' do
+post '/exact_change' do
     number = params[:changevalue]
-    result = exact_change(number)
+    session[:result] = exact_change(number)
+    # "OK, for #{number}, you will need #{result}!  Get to countin'!!"
     erb :showinfo, :locals => {:number => number, 
-                               :result => result}
+                               :result => session[:result]}
 end
