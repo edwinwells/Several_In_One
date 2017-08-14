@@ -4,6 +4,8 @@ require_relative 'exact_change.rb'
 require_relative "gameboard.rb"
 require_relative "player.rb"
 require_relative "game.rb"
+
+class Severalweb < Sinatra::Base
 enable :sessions
 
 get '/' do
@@ -292,4 +294,5 @@ end
 get "/winner" do
     player = params[:player]
         erb :win, :locals => {gameboard: session[:gameboard], player: player}
+end
 end
