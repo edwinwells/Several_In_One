@@ -1,5 +1,5 @@
 source :rubygems
-gem "sinatra"
+gem 'sinatra'
 gem 'minitest'
 gem 'rack'
 gem 'rack-test'
