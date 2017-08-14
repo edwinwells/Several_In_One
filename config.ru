@@ -8,4 +8,5 @@
 # run Sinatra::Application
 
 require './app'
-run Severalweb
+run Sinatra::Application
+# run Severalweb
