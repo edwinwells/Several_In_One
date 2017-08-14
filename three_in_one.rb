@@ -1,3 +1,0 @@
-require "sinatra"
-require "erb"
-

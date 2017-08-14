@@ -4,35 +4,102 @@ color: green;
 text-decoration: underline;
 }
 
-
-
 .color_blue{
 color: blue;
-
 }
 
 .color_darkmagenta{
 color: darkmagenta;
-
 }
 
 .color_goldenrod{
 color: goldenrod;
+}
 
+.color_purple{
+color: purple;
 }
 
 .center{
 text-align: center;
-
 }
 
 .bgsilver{
 background-color: silver;
-
 }
-
 
 .bggoldenrod{
 background-color: goldenrod;
-
 }
+
+.bgblack{
+background-color: black;
+}
+
+.bggold{
+background-color: gold;
+}
+
+h1 { text-align: center;
+font-weight: 900;
+color: black;
+text-decoration: underline;
+}
+
+H2 { text-align: center;
+font-weight: bold;
+color: blue;
+}
+
+H3 {
+font-weight: bold;
+color: blue;
+text-decoration: underline;
+}
+
+
+table {
+	font-family: palatino;
+	font-weight: bold;
+	width: 22%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+td, th {
+	text-align: center;
+	padding: 6px;
+	border-left: 3px solid blue;
+}
+
+td:first-child { border-left: none; }  
+
+tr:nth-child(even) {
+	background-color: #FFD700;
+	border-bottom: 3px solid blue;
+	border-top: 3px solid blue;
+}
+
+tr:nth-child(odd) {
+	background-color: #FFD700;
+}
+
+td { width:42px; height:74px; } 
+
+table {verticalAlign = center;
+	font-weight: bold;
+	font-size:37;
+	color: black;
+}	
+
+.buttontd {
+	width: 74px; 
+	height: 74px;
+	font: 40px palatino, sans-serif;
+	font-weight: bold;
+	background-color: gold;
+	border-style: none;
+}
+
+p.detail { text-align:center;color:black;font-weight:bold;font-family:"Times New Roman";font-size:35 }
+span.ultimate { text-decoration:underline;font-weight:bold;font-family:"Times New Roman";font-size:37;color:darkmagenta}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<form method="post" action="/move">
+
+<center><table>
+
+  <tr>
+ 
+    <td><button class="buttontd" type="submit" name="square" value="a3"><%= gameboard.setup[:a3]%></button></td>
+    <td><button class="buttontd" type="submit" name="square" value="b3"><%= gameboard.setup[:b3]%></button></td>
+    <td><button class="buttontd" type="submit" name="square" value="c3"><%= gameboard.setup[:c3]%></button></td>
+
+  </tr>
+  <tr>
+    <td><button class="buttontd" type="submit" name="square" value="a2"><%= gameboard.setup[:a2]%></button></td>
+    <td><button class="buttontd" type="submit" name="square" value="b2"><%= gameboard.setup[:b2]%></button></td>
+    <td><button class="buttontd" type="submit" name="square" value="c2"><%= gameboard.setup[:c2]%></button></td>
+  </tr>
+  <tr>
+    <td><button class="buttontd" type="submit" name="square" value="a1"><%= gameboard.setup[:a1]%></button></td>
+    <td><button class="buttontd" type="submit" name="square" value="b1"><%= gameboard.setup[:b1]%></button></td>
+    <td><button class="buttontd" type="submit" name="square" value="c1"><%= gameboard.setup[:c1]%></button></td>
+  </tr>
+</table></center>
+</form>
+</body>
+</html>
