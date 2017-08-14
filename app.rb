@@ -5,7 +5,7 @@ require_relative 'gameboard.rb'
 require_relative 'player.rb'
 require_relative 'game.rb'
 
-class Severalweb < Sinatra::Base
+# class Severalweb < Sinatra::Base
 enable :sessions
 
 get '/' do
@@ -295,4 +295,4 @@ get "/winner" do
     player = params[:player]
         erb :win, :locals => {gameboard: session[:gameboard], player: player}
 end
-end
+# end
