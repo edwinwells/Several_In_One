@@ -336,6 +336,7 @@ class ComputerUnbeatable < Player
    				    newgame.setup >= {a3: "X", b2: "O", b1: "X", a2: "O", c1: "X"} ||
    				    newgame.setup >= {a3: "X", b2: "O", b1: "X", a2: "O", c3: "X"} ||
    				    newgame.setup >= {a3: "X", b2: "O", b1: "X", a2: "O", b3: "X"} ||
+                   newgame.setup >= {a1: "O", b2: "X", a3: "X", c1: "O", a2: "X"} ||
    				    newgame.setup >= {c3: "X", b2: "O", a2: "X", a3: "O", c1: "X"} ||
                    newgame.setup >= {a2: "X", b2: "O", b1: "X", a3: "O", c3: "X"}       
    				    "c2"
