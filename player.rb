@@ -235,10 +235,11 @@ class ComputerUnbeatable < Player
    		#ideal second move for O, if O has taken b2, is the opposite corner square:
    			when 6
    				if newgame.setup >= {a1: "X", b2: "O", c3: "X"} ||
-   				   newgame.setup >= {a3: "X", b2: "O", c3: "X"} ||
+                  newgame.setup >= {a3: "X", b2: "O", c3: "X"} ||
    				   newgame.setup >= {b2: "X", a1: "O", b1: "X"}
    					"b3"
    				elsif newgame.setup >= {a1: "X", b2: "O", a3: "X"} ||
+                 newgame.setup >= {a1: "X", b2: "O", a3: "X"} ||
 					  newgame.setup >= {b2: "X", a1: "O", c2: "X"} ||
 					  newgame.setup >= {a3: "X", b2: "O", b1: "X"}
   					   "a2"
@@ -251,6 +252,7 @@ class ComputerUnbeatable < Player
    					"a3"
    				elsif newgame.setup >= {a1: "X", b2: "O", c2: "X"} ||
    					  newgame.setup >= {a1: "X", b2: "O", b1: "X"} ||
+                    newgame.setup >= {a1: "X", b2: "O", a3: "X"} ||
    				     newgame.setup >= {a1: "O", b2: "X", c3: "X"} ||
    				     newgame.setup >= {c3: "X", b2: "O", c2: "X"} ||
                     newgame.setup >= {a2: "X", b2: "O", c2: "X"}
