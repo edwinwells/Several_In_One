@@ -3,7 +3,7 @@ GEM
   specs:
     minitest (5.10.1)
     mustermann (1.0.0)
-    rack (2.0.0)
+    rack (2.0.3)
     rack-protection (2.0.0)
       rack
     rack-test (0.7.0)
