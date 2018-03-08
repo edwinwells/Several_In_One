@@ -3,7 +3,7 @@ GEM
   specs:
     minitest (5.10.1)
     mustermann (1.0.0)
-    rack (2.0.1)
+    rack (2.0.0)
     rack-protection (2.0.0)
       rack
     rack-test (0.7.0)
@@ -28,4 +28,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.16.1
+   1.15.1
